@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tb3{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        #tb3 th, td{ border: 1px solid black;  }
+
+        #tb3 thead{ background-color: yellowgreen;  }
+
+        #tb3 tbody{ background-color: yellow; }
+
+        #tb3 tfoot{
+            background-color: orange;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    
+    <table border="1" >
+        <tr>
+            <th width="80px">이름</td>
+            <td rowspan="2" width="80px"></td>
+            <th width="150px" rowspan="2">사진</td>
+        </tr>
+        <tr>
+            <th>연락처</td>
+            <td colspan="2"></td>   
+        </tr>
+        <tr>
+            <th>주소</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th>자기소개</td>
+            <td colspan="2"></td>
+
+        </tr>
+    </table>
+
+
+
+    <table id="tb3">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+          </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>20</td>
+                <td>서울시 중구</td>
+        </tr>
+            <tr>
+            <td>홍길동</td>
+            <td>20</td>
+            <td>서울시 중구</td>
+        </tr>
+            <tr>
+            <td>홍길동</td>
+            <td>20</td>
+            <td>서울시 중구</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+            <th colspan="2">총 인원</th>
+            <th>3명</th>
+        </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
