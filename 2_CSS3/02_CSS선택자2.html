@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_CSS 선택자2</title>
+
+    <!-- link 태그 : 외부 파일(CSS)과 연결하는 태그 -->
+    <link rel="stylesheet" href="css/02_selector2.css">
+
+
+
+</head>
+<body>
+
+    <h3>기본 속성 선택자</h3>
+    <pre>
+        특정 속성이 작성된 요소를 선택하는 선택자.
+        (id, class도 선택은 가능하지만 #, .기호를 사용하길 권장)
+
+        <strong>[작성법]</strong>
+        선택자[속성명="속성값"] { CSS 코드;}
+
+        (참고)
+        1) 선택자는 생략 가능
+            -> 특정  속성명="속성값"을 지닌 모든 요소
+
+        2) "속성값"에서 쌍따옴표("")는 홑따옴표('')로 변경하거나 생략할 수 있다.
+
+    </pre>
+    
+    <div name="name-1">div1</div>
+    <div name="name-1">div2</div>
+    <div name="name-2">div3</div>
+    <div name="name-2">div4</div>
+
+    <p name="name-1" class="test-1">[p1]</p>
+    <p name="name-1">[p2]</p>
+    <p name="name-2">[p3]</p>
+    <p name="name-2" class="test-1">[p4]</p>
+
+    <hr>
+
+    <h3> 자식 선택자(>) </h3>
+    <pre> 
+        지정된 요소 바로 하위에 존재하는 요소를 선택하는 선택자.
+
+        <strong>[작성법]</strong>
+        선택자1 == 부모 요소
+        선택자2 == 자식 요소
+    </pre>
+
+    <ul id="parent-ul">부모
+        <li class="test-2">자식1</li>
+        <li>
+            <span>자식2</span>
+        </li>
+        <li>자식3</li>
+        <li>
+            <span class="test-2">자식4</span>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>후손(자손) 선택자 ( (띄어쓰기) )</h3>
+    <pre>
+        지정된 요소의 하위에 존재하는 모든 요소를 선택하는 선택자
+
+        - 자식 : 1단계 아래(하위)
+        - 후손 : n단계 아래 모두
+
+        <strong>[작성법]</strong>
+        선택자1 선택자2
+    </pre>
+
+    <div id="test-div">
+        <p>test-div의 자식 요소 입니다.</p>
+        <p class="test-3">test-div의 후손 요소 입니다.</p>
+
+    </div>
+
+    <div>
+        <p>
+            이것도 후손일까?<br>
+            <span class="test-3">안녕하세요</span>
+        </p>
+    </div>
+
+
+
+</body>
+</html>
