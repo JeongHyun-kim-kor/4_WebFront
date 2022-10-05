@@ -23,8 +23,8 @@
 }
 
 
-/*              */
-
+/* 여러 선택자 동시 작성 */
+/* 아이디가 test4이면서 name이 test4, 클래스가 test4인 */
 #test4, [name='test4'], .test4{
     border: 2px solid black;
     background-color: yellow;
@@ -44,5 +44,9 @@
 }
 
 .c6.test6{   /* 순서 관계 없음 */
-    background-color: red;
+    background-color: rgb(115, 255, 0);
+}
+
+.test6{
+    background-color: blue;
 }
