@@ -91,7 +91,7 @@ img{
         - 길이는 원근법 적용 거리
     */
     
- transform : perspective(300px) translate3d(50px, 50px, -1000px);   
+ transform : perspective(300px) translate3d(50px, 50px, -100px);   
                     /* X , Y, Z */
 }
 
