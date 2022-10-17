@@ -1,0 +1,27 @@
+header > #logo{
+    display: flex;
+    justify-content: center;
+
+}
+
+header > #subMenu li{
+    display: flex;
+
+    flex-direction: column;
+    /* justify-content: right; */
+    align-items: flex-end;
+   
+}
+
+#special{
+    width: 200px;
+    height: 200px;
+}
+
+#menu > ul{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    
+   
+}
