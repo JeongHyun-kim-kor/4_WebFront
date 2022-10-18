@@ -116,7 +116,9 @@ nav li{
 
 /* 메뉴 내부 a 태그 */
 nav li > a{
-    text-decoration: none; /* 밑줄 없애기 */
+    
+    /* 밑줄 없애기 */
+    text-decoration: none; 
     font-size: 18px;
     font-weight: bold;
     color: black;

@@ -4,25 +4,91 @@ header > #logo{
 
 }
 
-header > #subMenu li{
-    display: flex;
-
-    flex-direction: column;
-    /* justify-content: right; */
-    align-items: flex-end;
-   
+#subMenu li{
+    float :right;
+    list-style: none;
+    
+}
+#subMenu span{
+    float :right;
+    list-style: none;
+    
 }
 
+#mainImg{
+    width: 400px;
+    height: 400px;
+
+}
 #special{
     width: 200px;
     height: 200px;
 }
 
-#menu > ul{
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    
-    
-   
+#menu{
+   box-sizing: border-box;
+   border-top: 1px solid #6e6e6e;
+   border-bottom: 1px solid #6e6e6e;
 }
+
+#menu ul{
+    margin: 0;
+    padding: 0; 
+    list-style: none; /* li 태그 앞에 점 삭제 */
+
+    display: flex;
+    height: 100%;
+}
+
+#menu ul a{
+
+    width: 170px;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 18px;
+    color: black;
+
+    display: block;
+    height: 100%;
+}
+
+.PhotoGallery{
+    width: 1000px;
+    border: 1px solid black;
+}
+.PhotoGallery ul{
+    float: left;
+}
+
+.PhotoGallery ul.left{
+    width: 600px;
+}
+
+.PhotoGallery ul.right{
+    width: 400px;
+}
+
+.PhotoGallery ul li img{
+    width: 100%;
+}
+
+.PhotoGallery ul .photo1 a{
+    width: 600px;
+    height: 400px;
+}
+
+.PhotoGallery ul .photo4 a{
+    width: 400px;
+    height: 200px;
+}
+/* .PhotoGallery ul.left  > li img{
+    list-style: none;
+    width: 300px;
+    height: 300px;
+}
+
+.PhotoGallery > ul li{
+    list-style: none;
+  
+}
+ */
