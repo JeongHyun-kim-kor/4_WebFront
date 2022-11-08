@@ -119,7 +119,7 @@
         inputId.addEventListener("change", function(){
 
         const regEx = /^[a-z][A-Za-z\d-_]{5,13}$/; //한글자는 무조건 소문자이니 5~13자  + $ ????추가?
-        // 특수문자 사이에 백슬래쉬 사이에 넣기  \w_- == [A-Za-z0-9-_]
+        // 특수문자 앞에 백슬래쉬 사이에 넣기  \w_- == [A-Za-z0-9-_]
 
         if(regEx.test(this.value)){
             inputId.style.backgroundColor="springgreen";
