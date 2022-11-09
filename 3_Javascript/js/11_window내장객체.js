@@ -75,6 +75,39 @@ document.getElementById("stop").addEventListener("click", function(){
 
 });
 
+// 팝업창 열기
+const openPopup1 = document.getElementById("openPopup1");
+const openPopup2 = document.getElementById("openPopup2");
+const openPopup3 = document.getElementById("openPopup3");
 
+openPopup1.addEventListener("click", function(){
+    // 새 탭에서 열기
+    window.open("09_배열.html")
+});
+    
+openPopup2.addEventListener("click", function(){
+    // 최소한의 팝업창 형태로 열기
+    window.open("09_배열.html", "_blank", "popup")
+});
+
+openPopup3.addEventListener("click", function(){
+    // 옵션이 지정된 팝업창
+
+    // 옵션 작성 방법 : "K=V, K=V, K=V" , 크기 단위 작성 X
+
+    const options = "width=400, height=500, top=50, left=100";
+
+    window.open("09_배열.html", "popupWindow" , options)
+});
+
+
+// 팝업창(자식) 열기
+document.getElementById("sendChild").addEventListener("click", function(){
+
+    
+    const options = "width=300, height=300, top=50, left=700";
+
+    window.open("팝업.html", "popupWindow" , options)
+})
 
 
