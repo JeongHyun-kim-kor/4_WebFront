@@ -153,3 +153,19 @@ function Student(grade, ban, name){
     
 
 // JSON
+document.getElementById("btn3").addEventListener("click", function(){
+    // JSON.stringgify(JS객체) : JS객체 -> JSON문자열 변환
+
+    // JSON.parse(JSON문자열) : JSON문자열 -> JS 객체 변환
+
+    const std = new Student(5,7, "오칠이");
+
+    console.log(std); // 객체
+    console.log(JSON.stringify(std)); // 객체 -> JSON 변환
+    // ** JSON 변환시 객체의 기능은 포함하지 않는다!!! **
+    // -> JSO은 데이터 전달에 특화된 형태
+
+    const member ='{"memberId":"user01","memberPw":"pass01","age":20}';
+    console.log(member); // JSON 문자열
+    console.log(JSON.parse(member)); // JSON --> 객체로 변한
+})
