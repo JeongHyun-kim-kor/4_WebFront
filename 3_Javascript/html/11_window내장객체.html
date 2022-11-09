@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_window내장객체</title>
+
+    <link rel="stylesheet" href="../css/11_window내장객체.css">
+</head>
+<body>
+    <h1>window 객체</h1>
+
+    <pre>
+        - 브라우저 창 자체를 나타내는 객체
+
+        - window 객체는 JS에서 최상위 객체이며
+            DOM, BOM으로 분류된다.
+
+        DOM(Document Object Model) : HTML 문서 자체를 나타내는 객체(document)
+
+        BOM(Browser Object Model) : location, history, screen, navigator
+
+        * window 객체 창 자체를 나타내고 있으므로 브라우저 내에서 어디서든 접근 가능
+        그래서 window 객체의 속성과 기능 호출 시 window 단어를 생략할 수 있따.
+        ex) window.alert() == alert()
+    </pre>
+
+    <hr>
+
+    <h2>window.setTimeout(함수, 지연시간(ms))</h2>
+    <pre>
+        지정된 지연시간 후 함수를 실행하게 만드는 
+        window객체의 함수
+
+        * 시간 관련된 함수는 비동기(코드 인식은 순서대로 진행되지만, 
+        수행은 동시에 진행된다.)
+
+    </pre>
+    
+    <button id="btn1">setTimeout() 확인</button>
+
+    <script src="../js/11_window내장객체.js"></script>
+</body>
+</html>
